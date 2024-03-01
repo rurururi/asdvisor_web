@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- bootstrap sass file -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="bg-img"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand me-0" href="#">
+          <img src="../images/asd_1.svg" alt="ASDVISOR" width="30" height="30" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-primary" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-primary" href="#">Features</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column">
+      <h1 class="text-white text-center my-5">Welcome to ASDVISOR</h1>
+      <div class="container bg-light p-4 rounded w-100" id="login-box">
+        <div class="row align-items-center">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="../images/asd_2.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Login</h2>
+            <form action="">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <label for="password" class="form-label">Password</label>
+              </div>
+              <div class="mb-3 d-grid gap-3 col-lg-6 mx-auto">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+            <div class="mb-3 d-grid gap-3 col-lg-6 mx-auto">
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Register
+              </button>
+              <a
+                href="#"
+                class="d-block text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Forgot Password?</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Parent Consent
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We are committed to ensuring the privacy and security of your
+                information on our mobile app. As part of our efforts to provide
+                comprehensive healthcare services, we request your consent for
+                the secure storage and encrypted access of both parent and child
+                information by authorized healthcare professionals.
+              </p>
+              <p>
+                By clicking the "I Agree" button below, you acknowledge and
+                agree to the following:
+              </p>
+              <ul>
+                <li>
+                  <b>Secure Storage</b>: We employ robust encryption measures to
+                  safeguard the confidentiality and integrity of the information
+                  provided by parents and associated with their child on our
+                  mobile app.
+                </li>
+                <li>
+                  <b>Authorized Access</b>: Only authorized healthcare
+                  professionals, directly involved in the care of your child,
+                  will have access to the stored information. This access is
+                  strictly limited to ensure the highest standards of
+                  confidentiality.
+                </li>
+                <li>
+                  <b>Doctor-Parent Comunication</b>: The encrypted information
+                  may be shared between doctors and parents for the purpose of
+                  facilitating effective communication related to the health and
+                  well-being of your child.
+                </li>
+                <li>
+                  <b>Complaince with Regulations</b>: We adhere to all relevant
+                  data protection regulations and guidelines to ensure that your
+                  information is handled with the utmost care and in compliance
+                  with applicable laws.
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">I Agree</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+      </script>
+  </body>
+</html>
