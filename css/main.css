@@ -32,6 +32,52 @@
     z-index: -1;
   }
 
+  .post-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; 
+  }
+
+  .user-name {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+.card {
+  margin-bottom: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
   #login-box{
     max-width: 1000px;
   }
